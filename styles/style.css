@@ -602,9 +602,13 @@ h3 {
 
 
 /*Queries para ajustar texto en header*/
-@media screen and (max-width:900px) {
+@media screen and (max-width:960px) {
     .logo {
         margin-right: 5px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
     }
     header nav ul {
         justify-content: flex-start;
@@ -612,11 +616,18 @@ h3 {
     figcaption {
         font-size: 0.8rem;
     }
+    .container {
+        margin-bottom: 10px;
+    }
 }
 
 /*Queries para el aspecto en mobiles y tablets*/
 /*Tablets*/
 @media screen and (max-width:768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
     .gridLayout {
         display: grid;
         grid-template-areas: 
