@@ -45,6 +45,7 @@ header {
 nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 header nav ul {
     display: flex;
@@ -55,85 +56,10 @@ header nav ul {
     align-items: center;
 }
 /*Clases para el header*/
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    background: black;
-    z-index: -1;
+.nav-bar {
+    display: flex;
+    flex-direction: row;
 }
-.hamburgerInput{
-    display: none;
-}
-.hamburgerMenu {
-    margin: 20px;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    display: none;
-    border: none;
-    background: linear-gradient(
-        to bottom, 
-        black, black 20%, 
-        rgba(46, 85, 151) 20%, rgba(46, 85, 151) 40%, 
-        black 40%, black 60%, 
-        rgba(46, 85, 151) 60%, rgba(46, 85, 151) 80%, 
-        black 80%, black 100%
-    );
-}
-.hamburgerMenu .sidebarMenu {
-    margin: auto;
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: 100%;
-    background-color: #3D0E61;
-    transition: 0.3s;
-    padding: 0px 10px;
-    box-sizing: border-box;
-}
-
-.hamburgerMenu h3 {
-    color: #B9FAF8;
-    font-size: 2.2rem;
-}
-
-.hamburgerMenu ul {
-    padding-left: 0px;
-}
-
-.hamburgerMenu li {
-    list-style-type: none;
-    line-height: 3rem;
-}
-
-.hamburgerMenu a {
-    color: #B9FAF8;
-    font-size: 1.3rem;
-    text-decoration: none;
-}
-
-.hamburgerMenu a:hover {
-    text-decoration: underline;
-}
-.hamburgerInput:checked + .hamburgerMenu .sidebarMenu {
-    visibility: visible;
-    left: 0;
-}
-.hamburgerInput:checked ~ .overlay{
-    visibility: visible;
-    opacity: 0.4;
-}
-
 .logo{
     margin-right: 20px;
     height: 100px;
@@ -148,6 +74,7 @@ header nav ul {
     border-radius: 40%;
 }
 .headerImage {
+    margin-top: 20px;
     height: 50px;
     width: 50px;
 }
@@ -156,12 +83,15 @@ header nav ul {
     flex-wrap: wrap;
     min-width: 75px;
 }
+.sidebarText {
+    color: white;
+}
 /*CSS para el buscador*/
-.container {
+.searchContainer {
     margin: auto;
-    max-width: 200px;
+    max-width: 150px;
     background: white;
-    height: 30px;
+    height: 50px;
     border-radius: 30px;
     padding: 10px 20px;
     display: flex;
@@ -170,10 +100,10 @@ header nav ul {
     transition: 0.8s;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
 }
-.container:hover .input {
+.searchContainer:hover .input {
     width: 100px;
 }
-.container .input {
+.searchContainer .input {
     background: transparent;
     border: none;
     outline: none;
@@ -181,9 +111,13 @@ header nav ul {
     font-weight: 500;
     font-size: 16px;
     transition: 0.8s;
+    margin-bottom: 10px;
 }
-.container .btn .fas {
+.searchContainer .searchBtn .fas {
     color: black;
+}
+.bg-primary {
+    background-color: rgba(46, 85, 151)!important;
 }
 /*Animaciones para iconos del header*/
 /*!
@@ -361,70 +295,6 @@ button {
     border-radius: 0%;
 }
 /*Clases para el main*/
-/*CSS para el Slider*/
-#i1, #i2, #i3, #i4{ display: none;}
-.slideshow{
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 38%;
-    user-select: none;
-    background-color: #1c1c1c;
-    border-bottom-style: solid;
-    border-color: #EAEAEA;
-    border-width: 1px;
-}
-.slideshow .slide_img{
-    position: absolute;
-    width: 100%;;
-    height: 100%;
-}
-.slideshow .slide_img img{
-    width: inherit;
-    height: inherit;
-}
-.slideshow #nav_slide{
-    width: 100%;
-    bottom: 12%;
-    height: 11px;
-    position: absolute;
-    text-align: center;
-    z-index: 99;
-    cursor: default;
-}
-#nav_slide .dots{
-    top: 20px;
-    width: 14px;
-    height: 14px;
-    margin: 0 4px;
-    position: relative;
-    border-radius: 100%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: .4s;
-}
-#nav_slide .dots:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.9);
-    transition: .25s
-}
-.slide_img{z-index: -1;}
-#i1:checked ~ #one,
-#i2:checked ~ #two,
-#i3:checked ~ #three,
-#i4:checked ~ #four
-{z-index: 9; animation: scroll 1s ease-in-out;}
-#i1:checked  ~  #nav_slide #dot1,
-#i2:checked  ~  #nav_slide #dot2,
-#i3:checked  ~  #nav_slide #dot3,
-#i4:checked  ~  #nav_slide #dot4
-{ background-color: rgba(255,255,255,.9);}
-
-@keyframes scroll{
-    0%{opacity:.4;}
-    100%{opacity:1;}
-}
 /*Galeria de productos*/
 .title {
     border-style: solid;
@@ -433,14 +303,6 @@ button {
     border-width: 3px;
     border-radius: 22px;
     color: white;
-}
-
-.productContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .products {
     text-align: center;
@@ -451,13 +313,14 @@ button {
     border-width: 1px;
     border-image-source: initial;
     background-color: beige;
-    width: 150px;
-    height: 215px;
-    margin:15px;
-    padding: 30px 30px 30px 30px;
+    width: 200px;
+    height: 300px;
+    margin:10px;
+    padding-top: 30px;
 }
 .productImage {
-    width:150px;
+    text-align: center;
+    min-width:150px;
     height: 150px;
     border-radius: 10%;
 }
@@ -486,21 +349,21 @@ footer {
     width: 100%;
     max-width: 1000px;
     overflow: hidden;
-    color:white;
+    color:
+    white;
     flex-wrap: wrap;
     grid-area: footer;
 }
 footer div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
     padding: 0px;
-    flex-direction: column;
+    justify-content: center;
     align-content: center;
 }
 footer li {
-    padding: 5px;
+    /* padding: 5px; */
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
@@ -518,6 +381,7 @@ footer li {
 .instagram {
     height: 25px;
     width: 25px;
+    margin: 10px 10px ;
 }
 .newsletter {
     margin: 0;
@@ -552,11 +416,17 @@ footer li {
     margin: 0%;
     padding: 0;
 }
+footer div h5 {
+    font-size: 0.8rem;
+}
 /*Otros Elementos generales*/
 a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+}
+a:hover {
+    color: white;
 }
 @font-face {
     font-family: mikado;
@@ -568,11 +438,18 @@ a {
 }
 ul {
     list-style: none;
+    margin-bottom: 0;
 }
 h3 {
     font-size: 2rem;
     margin: 12px;
     text-align: center;
+}
+ol, ul {
+    padding-left:0 ;
+}
+p {
+    margin-bottom: 2px;
 }
 
 
@@ -602,11 +479,11 @@ h3 {
 
 
 /*Queries para ajustar texto en header*/
-@media screen and (max-width:960px) {
+@media screen and (max-width:985px) {
     .logo {
         margin-right: 5px;
     }
-    header {
+    .nav-bar {
         display: flex;
         flex-direction: column;
     }
@@ -616,7 +493,7 @@ h3 {
     figcaption {
         font-size: 0.8rem;
     }
-    .container {
+    .searchContainer {
         margin-bottom: 10px;
     }
 }
@@ -624,7 +501,7 @@ h3 {
 /*Queries para el aspecto en mobiles y tablets*/
 /*Tablets*/
 @media screen and (max-width:768px) {
-    header {
+    .nav-bar {
         display: flex;
         flex-direction: row;
     }
@@ -640,17 +517,20 @@ h3 {
     .mainMenu {
         display: none;
     }
-    .hamburgerMenu {
-        margin-top: 40px;
+    .navBarButton {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        min-width: 50px;
+        max-width: 50px;
+        text-align: center;
     }
     .logoResponsive{
         display: flex;
         margin: 20px;
     }
-    .container {
+    .searchContainer {
         margin: 40px;
     }
     .aboutUs {
@@ -662,29 +542,35 @@ h3 {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         justify-content: center;
         justify-items: center;
     }
     .lowerMenu {
+        display: flex;
+        flex-direction: column;
         max-width: 175px;
     }
+    .locationContainer {
+        margin-top: 20px;
+    }
     .newsletterContainer {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-right: 20px;
         grid-column-start: 3;
         grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
     }
     .trademark {
         grid-column-start: 1;
         grid-column-end: 4;
-        grid-row-start: 2;
+        grid-row-start: 3;
 
     }
 }
 
 /*Mobiles*/
-@media screen and (max-width:500px) {
+@media screen and (max-width:576px) {
     .gridLayout {
         display: grid;
         grid-template-areas: 
@@ -693,51 +579,43 @@ h3 {
             "footer";
             grid-template-columns: 1fr;
     }
-    .hamburgerMenu {
-        min-width: 50px;
-    }
     .logoResponsive{
         margin: 20px 5px 20px 10px;
         border-radius: 40%;
     }
-    .container {
-        margin-left: 5px;
-        max-width: 100px;
-    }
-    .slideshow{
-        width: 100%;
-        height: 0;
-        padding-bottom: 55%;
-    }
-    #nav_slide .dots{
-        width: 12px;
-        height: 12px;
+    .searchContainer {
+        display: none;
+        margin: 10px;
     }
     .title {
         font-size: 1rem;
     }
     .products {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 0;
-        margin: 10px;
         width: 100%;
-        padding-left: 5px;
-        max-width: 250px;
-        max-height: 120px;
-        justify-items: center;
+        max-width: 400px;
+        max-height: 200px;
+        padding-top: 20px;
+        /* text-align: start; */
+        /* align-items: center; */
+    }
+    .productArrangeMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 5px;
+        row-gap: 20px;
+    }
+    .productImage {
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+        margin-left: 0;
     }
     div figure div {
         grid-column-start: 2;
         justify-items: start;
         align-items: start;
-    }
-    .productImage {
-        width:100px;
-        height: 100px;
-        border-radius: 10%;
-        margin-left: 0;
     }
     form div {
         flex-direction: column;
@@ -758,3 +636,13 @@ h3 {
     }
 }
 
+@media screen and (max-width:430px) {
+    .products {
+        max-width: 280px;
+        height: 300px;
+    }
+    .mobileText {
+        padding-left: 10px;
+        font-size: 0.8rem;
+    }
+}

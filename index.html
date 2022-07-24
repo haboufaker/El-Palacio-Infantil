@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Palacio infantil</title>
     <link rel="icon" href="./assets/images/logo.png">
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body >
     <div class="gridLayout">
-        <header>
+        <header class="navbar-nav nav-bar">
             <nav>
                 <ul class="mainMenu">
                     <!-- Lista con logo + secciones principales de la pagina web -->
@@ -65,153 +66,255 @@
             </nav>
             
             <!--Menú Hamburguer-->
-            <input type="checkbox" class="hamburgerInput"/>
-            <label class="hamburgerMenu" for="hamburgerInput">
-                <nav class="sidebarMenu">
-                    <h3>Menu</h3>
-                    <ul>
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="#">BEBÉS</a></li>
-                        <li><a href="#">NIÑOS</a></li>
-                        <li><a href="#">NIÑAS</a></li>
-                        <li><a href="#">ACCESORIOS</a></li>
-                        <li><a href="#">NOSOTROS</a></li>
-                        <li><a href="#">CONTÁCTANOS</a></li>
-                    </ul>
-                </nav>
-            </label>
-            <div class="overlay"></div>
+            <nav class="navbar d-flex d-md-none">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler navBarButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú de contenidos</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active sidebarText" aria-current="page" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sidebarText" href="./sections/bebes.html">Bebés</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sidebarText" href="./sections/ninos.html">Niños</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sidebarText" href="./sections/ninas.html">Niñas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sidebarText" href="./sections/accesorios.html">Accesorios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sidebarText" href="./sections/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sidebarText" href="./sections/contactanos.html">Contáctanos</a>
+                                </li>
+                                <li>
+                                    <div class="searchContainer d-flex d-sm-none">
+                                        <input type="text" name="search" placeholder="Buscar..." class="input" />
+                                        <a href="#" class="searchBtn">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
             <a  href = "index.html"><img class="logoResponsive" src = "./assets/images/logo.png" alt = "Logo del palacio infantil"></a>
             <!--Buscador-->
-            <div class="container">
+            <div class="searchContainer">
                 <input type="text" name="search" placeholder="Buscar..." class="input" />
-                <a href="#" class="btn">
+                <a href="#" class="searchBtn">
                     <i class="fas fa-search"></i>
                 </a>
             </div>
         </header>
 
         <main>
-
-            <div class="slideshow">
-                <input type="radio" id="i1" name="images" checked />
-                <input type="radio" id="i2" name="images" />
-                <input type="radio" id="i3" name="images" />
-                <input type="radio" id="i4" name="images" />
-                <div class="slide_img" id="one">
-                    <img src="./assets/images/babyBannerPlaceholder.jpg">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
-                <div class="slide_img" id="two">
-                    <img src="./assets/images/boyBannerPlaceholder.jpg">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/images/babyBannerPlaceholder.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./assets/images/boyBannerPlaceholder.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./assets/images/girlBannerPlaceholder.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./assets/images/accessoriesBannerPlaceholder.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <div class="slide_img" id="three">
-                    <img src="./assets/images/girlBannerPlaceholder.jpg">
-                </div>
-                <div class="slide_img" id="four">
-                    <img src="./assets/images/accessoriesBannerPlaceholder.jpg">
-                </div>
-                <div id="nav_slide">
-                    <label for="i1" class="dots" id="dot1"></label>
-                    <label for="i2" class="dots" id="dot2"></label>
-                    <label for="i3" class="dots" id="dot3"></label>
-                    <label for="i4" class="dots" id="dot4"></label>
-                </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
             <!-- Seccion con productos destacados -->
             <h3 class="title">Productos destacados</h3>
-            <div class="productContainer">
-                <figure class="products">
-                    <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage" width="20%" height="20%">
-                    <div>Zapatos para niños</div>
-                    <div>11$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage" width="20%" height="20%">
-                    <div>Andadera para bebés</div>
-                    <div>88$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "teteros para bebés" class="productImage" width="20%" height="20%">
-                    <div>teteros para bebés</div>
-                    <div>9$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage" width="20%" height="20%">
-                    <div>Mordedor para bebés</div>
-                    <div>5$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage" width="20%" height="20%">
-                    <div>Zapatos para niños</div>
-                    <div>11$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage" width="20%" height="20%">
-                    <div>Andadera para bebés</div>
-                    <div>88$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "teteros para bebés" class="productImage" width="20%" height="20%">
-                    <div>teteros para bebés</div>
-                    <div>9$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage" width="20%" height="20%">
-                    <div>Mordedor para bebés</div>
-                    <div>5$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage" width="20%" height="20%">
-                    <div>Zapatos para niños</div>
-                    <div>11$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage" width="20%" height="20%">
-                    <div>Andadera para bebés</div>
-                    <div>88$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "teteros para bebés" class="productImage" width="20%" height="20%">
-                    <div>teteros para bebés</div>
-                    <div>9$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage" width="20%" height="20%">
-                    <div>Mordedor para bebés</div>
-                    <div>5$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage" width="20%" height="20%">
-                    <div>Zapatos para niños</div>
-                    <div>11$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage" width="20%" height="20%">
-                    <div>Andadera para bebés</div>
-                    <div>88$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "teteros para bebés" class="productImage" width="20%" height="20%">
-                    <div>teteros para bebés</div>
-                    <div>9$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage" width="20%" height="20%">
-                    <div>Mordedor para bebés</div>
-                    <div>5$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage" width="20%" height="20%">
-                    <div>Zapatos para niños</div>
-                    <div>11$</div>
-                </figure>
-                <figure class="products">
-                    <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage" width="20%" height="20%">
-                    <div>Andadera para bebés</div>
-                    <div>88$</div>
-                </figure>
+            <div class=".container">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Zapatos para niños</div>
+                                <div>11$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Andadera para bebés</div>
+                                <div>88$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "Teteros para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Teteros para bebés</div>
+                                <div>9$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Mordedor para bebés</div>
+                                <div>5$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Zapatos para niños</div>
+                                <div>11$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Andadera para bebés</div>
+                                <div>88$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "Teteros para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Teteros para bebés</div>
+                                <div>9$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Mordedor para bebés</div>
+                                <div>5$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Zapatos para niños</div>
+                                <div>11$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Andadera para bebés</div>
+                                <div>88$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "Teteros para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Teteros para bebés</div>
+                                <div>9$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Mordedor para bebés</div>
+                                <div>5$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/kidShoePlaceholder.jpg" alt = "zapatos para niños" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Zapatos para niños</div>
+                                <div>11$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyWalkerPlaceholder.jpg" alt = "Andadera para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Andadera para bebés</div>
+                                <div>88$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/babyBottlePlaceholder.jpeg" alt = "Teteros para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Teteros para bebés</div>
+                                <div>9$</div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productArrangeMobile">
+                            <img src = "./assets/images/teetherPlaceholder.jpg" alt = "Mordedor para bebés" class="productImage img-fluid" width="20%" height="20%">
+                            <div class="mobileText">
+                                <div>Mordedor para bebés</div>
+                                <div>5$</div>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <nav class= "col-xs-12 justify-content-center align-items-center mt-4 mb-4" aria-label="...">
+                        <ul class="pagination pagination-lg">
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link bg-primary">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </main>
     
@@ -287,5 +390,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
