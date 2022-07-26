@@ -17,15 +17,6 @@ body {
     box-sizing: border-box;
     width: 100%;
 }
-.gridLayout {
-    display: grid;
-    grid-template-areas: 
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-}
 /*Elementos para el header*/
 header {
     background-color: rgba(46, 85, 151);
@@ -476,43 +467,12 @@ p {
     max-width: 300px;
     margin: 20px;
 }
-
-
-/*Queries para ajustar texto en header*/
-@media screen and (max-width:985px) {
-    .logo {
-        margin-right: 5px;
-    }
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-    }
-    header nav ul {
-        justify-content: flex-start;
-    }
-    figcaption {
-        font-size: 0.8rem;
-    }
-    .searchContainer {
-        margin-bottom: 10px;
-    }
-}
-
 /*Queries para el aspecto en mobiles y tablets*/
 /*Tablets*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:991px) {
     .nav-bar {
         display: flex;
         flex-direction: row;
-    }
-    .gridLayout {
-        display: grid;
-        grid-template-areas: 
-            "header header"
-            "main main"
-            "footer footer";
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto;
     }
     .mainMenu {
         display: none;
@@ -571,14 +531,6 @@ p {
 
 /*Mobiles*/
 @media screen and (max-width:576px) {
-    .gridLayout {
-        display: grid;
-        grid-template-areas: 
-            "header"
-            "main"
-            "footer";
-            grid-template-columns: 1fr;
-    }
     .logoResponsive{
         margin: 20px 5px 20px 10px;
         border-radius: 40%;
