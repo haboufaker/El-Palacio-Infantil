@@ -29,7 +29,6 @@ header {
     z-index: 9999;
     text-align: center;
     color: white;
-    grid-area: header;
     display: flex;
 }
 
@@ -235,7 +234,6 @@ main {
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
-    grid-area: main;
 }
 /*Elementos para el formulario*/
 form {
@@ -248,6 +246,7 @@ form div {
     display: flex;
     flex-direction: row;
     margin: 2px;
+    align-items: center;
 }
 label {
     display: flex;
@@ -343,32 +342,21 @@ footer {
     color:
     white;
     flex-wrap: wrap;
-    grid-area: footer;
+    padding-top: 20px;
 }
 footer div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding: 0px;
     justify-content: center;
     align-content: center;
 }
 footer li {
-    /* padding: 5px; */
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
     flex-wrap: wrap;
-    text-align: center;
+    /* text-align: center; */
 }
 /*Clases para el footer*/
-.lowerMenu {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 .instagram {
     height: 25px;
     width: 25px;
@@ -378,24 +366,13 @@ footer li {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    /* justify-content: center; */
 }
 .newsletterEmail {
     background-color: white;
     border-color: black;
     width: 100%;
     margin-top: 0;
-}
-.newsletterButton {
-    margin:0;
-    padding: 0;
-}
-.location {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0px;
-    text-align: center;
-    max-width: 600px;
 }
 .locationIcon {
     height: 25px;
@@ -499,34 +476,6 @@ p {
     .aboutUsImage {
         max-width: 250px;
     }
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        justify-items: center;
-    }
-    .lowerMenu {
-        display: flex;
-        flex-direction: column;
-        max-width: 175px;
-    }
-    .locationContainer {
-        margin-top: 20px;
-    }
-    .newsletterContainer {
-        margin-top: 20px;
-        margin-right: 20px;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-    .trademark {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-
-    }
 }
 
 /*Mobiles*/
@@ -547,8 +496,6 @@ p {
         max-width: 400px;
         max-height: 200px;
         padding-top: 20px;
-        /* text-align: start; */
-        /* align-items: center; */
     }
     .productArrangeMobile {
         display: flex;
@@ -583,8 +530,8 @@ p {
         display: flex;
         flex-direction: column;
     }
-    .locationContainer {
-        display: none;
+    footer {
+        max-height: 1000px;
     }
 }
 
