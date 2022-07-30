@@ -1,0 +1,42 @@
+/*Clases para pagina "Nosotros*/
+.aboutUs {
+    font-size: 1rem;
+    margin: 10px;
+    @include tabletSmall {
+        font-size: 0.8rem;
+    }
+}
+.aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.aboutUsSubcontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    @include phoneLarge {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.aboutUsSubcontainerReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    @include phoneLarge {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.aboutUsImage {
+    max-width: 300px;
+    margin: 20px;
+    @include tabletSmall {
+        max-width: 250px;
+    }
+}

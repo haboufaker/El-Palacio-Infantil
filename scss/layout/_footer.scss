@@ -1,0 +1,61 @@
+/*Elementos para el footer*/
+footer {
+    background-color: $mainColor;
+    font-family: mikado;
+    bottom: 0px;
+    height: 100%;
+    max-height: 400px;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    color:
+    white;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    @include phoneLarge {
+        max-height: 1000px;
+    }
+    div {
+        padding: 0px;
+        justify-content: center;
+        align-content: center;
+    }
+    li {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        flex-wrap: wrap;
+        /* text-align: center; */
+    }
+    div h5 {
+        font-size: 0.8rem;
+    }
+}
+/*Clases para el footer*/
+.instagram {
+    height: 25px;
+    width: 25px;
+    margin: 10px 10px ;
+}
+.newsletter {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.newsletterEmail {
+    background-color: white;
+    border-color: black;
+    width: 100%;
+    margin-top: 0;
+}
+.locationIcon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+.currentPage {
+    font-size: 1.5rem;
+    margin: 0%;
+    padding: 0;
+}

@@ -1,0 +1,15 @@
+/*Reset*/
+@import "./layout/reset";
+
+/*Utilidades*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+/*secciones*/
+@import "./layout/general";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/form";
+@import "./layout/aboutUs";
+@import "./layout/contactUs";
+@import "./layout/footer";

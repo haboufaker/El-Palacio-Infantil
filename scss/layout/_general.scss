@@ -1,0 +1,39 @@
+/*Elementos generales*/
+body {
+    background-image: url('../assets/images/backgroundImage.png');
+    background-repeat: repeat-y;
+    font-family: capriolaRegular;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+/*Otros Elementos generales*/
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    &:hover {
+        color: white;
+    }
+}
+ol {
+    padding-left: 0;
+}
+ul {
+    @extend ol;
+    list-style: none;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 2rem;
+    margin: 12px;
+    text-align: center;
+}
+p {
+    margin-bottom: 2px;
+}

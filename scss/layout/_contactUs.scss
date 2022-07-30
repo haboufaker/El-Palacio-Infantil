@@ -1,0 +1,9 @@
+/*Clases para pagina "Contactanos"*/
+.contact {
+    font-size: 1rem;
+    margin:20px;
+}
+.contactBold {
+    @extend .contact;
+    font-weight: bold;
+}

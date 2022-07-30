@@ -1,0 +1,26 @@
+/*Queries para el aspecto en mobiles y tablets*/
+/*Tablets*/
+@mixin tabletLarge {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tabletSmall {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+/*Mobiles*/
+@mixin phoneLarge {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin phoneSmall {
+    @media screen and (max-width: 430px) {
+        @content;
+    }
+}

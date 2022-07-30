@@ -1,0 +1,239 @@
+/*Elementos para el header*/
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header {
+    background-color: $mainColor;
+    font-family: mikado;
+    top: 0px;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    position: sticky;
+    z-index: 9999;
+    text-align: center;
+    color: white;
+    display: flex;
+    nav ul {
+        @extend nav;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-evenly;
+    }
+}
+figcaption {
+    @include tabletLarge {
+        font-size: 0.9rem;
+    }
+}
+/*Clases para el header*/
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+.navBarButton {
+    @include tabletSmall {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-width: 50px;
+        max-width: 50px;
+        text-align: center;
+    }
+}
+.mainMenu {
+    @include tabletSmall {
+        display: none;
+    }
+}
+.logo{
+    margin-right: 12px;
+    height: 90px;
+    width: 90px;
+    border-radius: 40%;
+}
+.logoResponsive{
+    display: none;
+    @extend .logo;
+    @include tabletSmall {
+        display: flex;
+        width: 75px;
+        height: 75px;
+    }
+    @include phoneLarge {
+        width: 50px;
+        height: 50px;
+    }
+}
+.headerImage {
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+.section {
+    margin: 10px;
+    flex-wrap: wrap;
+    min-width: 75px;
+}
+.sidebarText {
+    color: white;
+}
+/*CSS para el buscador*/
+.searchContainer {
+    margin: auto;
+    max-width: 150px;
+    background: white;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    @include tabletSmall {
+        margin: 40px;
+    }
+    @include phoneLarge {
+        display: none;
+        margin: 10px;
+    }
+}
+.searchContainer:hover .input {
+    width: 100px;
+}
+.searchContainer .input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+    margin-bottom: 10px;
+}
+.searchContainer .searchBtn .fas {
+    color: black;
+}
+.bg-primary {
+    background-color: $mainColor!important;
+}
+/*Animaciones para iconos del header*/
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  /* Shrink */
+  .hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  
+  /* Pulse */
+  @-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Pulse Grow */
+  @-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .hvr-pulse-grow img {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse-grow:hover img, .hvr-pulse-grow:focus img, .hvr-pulse-grow:active img {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }

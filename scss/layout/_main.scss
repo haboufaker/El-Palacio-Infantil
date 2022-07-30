@@ -1,0 +1,81 @@
+/*Elementos para el main (Ubicacion de slideshow y productos)*/
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
+div figure div {
+    @include phoneLarge {
+        grid-column-start: 2;
+        justify-items: start;
+        align-items: start;
+    }
+}
+/*Clases para el main*/
+/*Galeria de productos*/
+.title {
+    border-style: solid;
+    border-color: $mainColor;
+    background-color: $mainColor;
+    border-width: 3px;
+    border-radius: 22px;
+    color: white;
+    @include phoneLarge {
+        font-size: 1rem;
+    }
+}
+.products {
+    text-align: center;
+    color: $mainColor;
+    border-style: solid;
+    border-color: #EAEAEA;
+    border-radius: 8px;
+    border-width: 1px;
+    border-image-source: initial;
+    background-color: beige;
+    width: 200px;
+    height: 300px;
+    margin:10px;
+    padding-top: 30px;
+    @include phoneLarge {
+        width: 100%;
+        max-width: 400px;
+        max-height: 200px;
+        padding-top: 20px;
+    }
+    @include phoneSmall {
+        max-width: 280px;
+        height: 300px;
+    }
+}
+.productArrangeMobile {
+    @include phoneLarge {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 5px;
+        row-gap: 20px;
+    }
+}
+.productImage {
+    text-align: center;
+    min-width:150px;
+    height: 150px;
+    border-radius: 10%;
+    @include phoneLarge {
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+        margin-left: 0;
+    }
+}
+.mobileText {
+    @include phoneSmall {
+        padding-left: 10px;
+        font-size: 0.8rem;
+    }
+}
