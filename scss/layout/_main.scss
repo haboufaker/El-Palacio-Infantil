@@ -5,7 +5,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
+    max-width: $maxWidth;
 }
 div figure div {
     @include phoneLarge {
@@ -22,9 +22,9 @@ div figure div {
     background-color: $mainColor;
     border-width: 3px;
     border-radius: 22px;
-    color: white;
+    color: $textColor;
     @include phoneLarge {
-        font-size: 1rem;
+        font-size: $normalTextSize;
     }
 }
 .products {

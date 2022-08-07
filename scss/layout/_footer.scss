@@ -6,14 +6,13 @@ footer {
     height: 100%;
     max-height: 400px;
     width: 100%;
-    max-width: 1000px;
+    max-width: $maxWidth;
     overflow: hidden;
-    color:
-    white;
+    color:$textColor;
     flex-wrap: wrap;
     padding-top: 20px;
     @include phoneLarge {
-        max-height: 1000px;
+        max-height: $maxWidth;
     }
     div {
         padding: 0px;

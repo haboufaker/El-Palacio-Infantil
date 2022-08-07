@@ -9,12 +9,12 @@ header {
     font-family: mikado;
     top: 0px;
     width: 100%;
-    max-width: 1000px;
+    max-width: $maxWidth;
     overflow: hidden;
     position: sticky;
     z-index: 9999;
     text-align: center;
-    color: white;
+    color: $textColor;
     display: flex;
     nav ul {
         @extend nav;
@@ -79,7 +79,7 @@ figcaption {
     min-width: 75px;
 }
 .sidebarText {
-    color: white;
+    color: $textColor;
 }
 /*CSS para el buscador*/
 .searchContainer {

@@ -1,6 +1,6 @@
 /*Clases para pagina "Nosotros*/
 .aboutUs {
-    font-size: 1rem;
+    font-size: $normalTextSize;
     margin: 10px;
     @include tabletSmall {
         font-size: 0.8rem;
