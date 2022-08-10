@@ -29,36 +29,35 @@ div figure div {
 }
 .products {
     text-align: center;
+    font-size: $normalTextSize;
     color: $mainColor;
     border-style: solid;
     border-color: #EAEAEA;
     border-radius: 8px;
     border-width: 1px;
     border-image-source: initial;
-    background-color: beige;
-    width: 200px;
-    height: 300px;
+    background-color: $textColor;
+    width: 220px;
+    height: 350px;
     margin:10px;
     padding-top: 30px;
-    @include phoneLarge {
-        width: 100%;
-        max-width: 400px;
-        max-height: 200px;
-        padding-top: 20px;
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    @include phoneSmall {
-        max-width: 280px;
-        height: 300px;
-    }
-}
-.productArrangeMobile {
     @include phoneLarge {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        width: 100%;
+        max-width: 400px;
+        max-height: 200px;
+    }
+    @include phoneSmall {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding: 5px 5px;
-        row-gap: 20px;
+        max-width: 350px;
+        height: auto;
     }
 }
 .productImage {
@@ -72,10 +71,51 @@ div figure div {
         border-radius: 10%;
         margin-left: 0;
     }
+    @include phoneSmall {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+        text-align: center;
+    }
 }
 .mobileText {
     @include phoneSmall {
         padding-left: 10px;
-        font-size: 0.8rem;
+    }
+}
+.productTextContainer {
+    padding-left: 5px;
+    background-color: rgb(212, 254, 254);
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 145px;
+    border-radius: 10%;
+    @include phoneLarge {
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+.productDescription {
+    padding-top: 10px;
+    text-align: start;
+    @include phoneSmall {
+        min-width: 0px;
+    }
+}
+.productPrice {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.productButton {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include phoneLarge {
+        margin-bottom: 0px;
     }
 }

@@ -5,17 +5,13 @@ form {
     margin: 10px;
     font-weight: bold;
     div {
-        display: flex;
-        flex-direction: row;
         margin: 2px;
-        align-items: center;
         @include phoneLarge {
             flex-direction: column;
         }
     }
 }
 label {
-    @extend form;
     width: 100%;
 }
 input {
@@ -28,17 +24,16 @@ input {
 textarea {
     width: 100%;
     min-height: 300px;
-    background-color: transparent;
     @extend input;
 }
 button {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     min-width: 90px;
     padding: 11px 20px 11px 20px;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
     background-color: black;
     font-weight: bold;
     font-size: $normalTextSize;
@@ -46,8 +41,18 @@ button {
     text-align: center;
     border-radius: 0%;
 }
-.formButtons {
+.formInput {
+    display: flex;
+    flex-direction: row;
     @include phoneLarge {
-        flex-direction: row;
+        flex-direction: column;
     }
+}
+.formSubmit {
+    display: flex;
+    flex-direction: column;
+}
+.formButtons {
+    display: flex;
+    flex-direction: row;
 }

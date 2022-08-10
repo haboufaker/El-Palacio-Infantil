@@ -140,22 +140,25 @@
                 <!-- Formulario de contacto -->
                 <div>
                     <form action="#">
-                        <div>
-                            <label for="text">Nombre:
-                            <input type="text">
-                            </label>
-                            <label for="email">Email:
-                            <input type="email"  name="email">
-                            </label>
+                        <div class="formInput">
+                            <div class="container-fluid">
+                                <label for="nombre">Nombre:</label>
+                                <input class="container-fluid" type="text" id="nombre">
+                            </div>
+                            <div class="container-fluid">
+                                <label for="email">Email:</label>
+                                <input class="container-fluid" type="email"  id="email">
+                            </div>
                         </div>
-                        <div>
-                            <label for="Observaciones"> Observaciones:
-                            <textarea></textarea>
-                            </label>
-                        </div>
-                        <div class="formButtons">
-                            <button type ="submit" value = "enviar">Enviar</button>
-                            <button type ="reset" value = "borrar">Borrar</button>
+                        <div class="formSubmit container-fluid">
+                            <div>
+                                <label for="Observaciones"> Observaciones:</label>
+                                <textarea></textarea>
+                            </div>
+                            <div class="formButtons">
+                                <button type ="submit" value = "enviar">Enviar</button>
+                                <button type ="reset" value = "borrar">Borrar</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -214,12 +217,11 @@
                                 <!-- Formulario Newsletter-->
                                 <form class="newsletter"  action="#">
                                     <div class="newsletter">
-                                        <label for="email">
+                                        <label for="email"></label>
                                         <input class= "newsletterEmail" type="text" placeholder="Correo electronico" name="email" required>
-                                        </label>
                                     </div>
-                                    <div>
-                                        <button type ="submit" value = "Suscribirse">Suscribirse</button>
+                                    <div class= "newsletterButton">
+                                        <button  type ="submit" value = "Suscribirse">Suscribirse</button>
                                     </div>
                                 </form>
                                 </a>
