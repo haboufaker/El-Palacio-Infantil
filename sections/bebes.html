@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <div>
+    <div class="verticalControl">
         <header class="navbar-nav nav-bar">
             <nav>
                 <ul class="mainMenu">
@@ -127,215 +127,777 @@
         </header>
     
         <main>
+            <!-- Modales -->
+            <div class="modal fade" id="product21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Conjunto enterizo conejo.png" alt = "Conjunto Enterizo Conejo" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Conjunto Enterizo Conejo</div>
+                                    <p class="modalParagraph">Conjunto Enterizo con tematica de Conejo para bebes </p>
+                                    <div class="modalProductPrice">$18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Zapatitos tinok 4-min.png" alt = "Zapato Tinok Marrón" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Zapato Tinok Marrón</div>
+                                    <p class="modalParagraph">Zapatos marrones para bebés</p>
+                                    <div class="modalProductPrice">$10</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Zapatitos tinok 3-min.png" alt = "Zapato Tinok Rosado" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Zapato Tinok Rosado</div>
+                                    <p class="modalParagraph">Zapatos rosados para bebés</p>
+                                    <div class="modalProductPrice">$10</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product24" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Zapatitos tinok 2-min.png" alt = "Zapato Tinok Negro" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Zapato Tinok Negro</div>
+                                    <p class="modalParagraph">Zapatos negros para bebés</p>
+                                    <div class="modalProductPrice">$10</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product25" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Zapatitos tigre-min.png" alt = "Zapato Tigre de bebé" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Zapato Tigre de bebé</div>
+                                    <p class="modalParagraph">Zapatos de tigritos para bebés</p>
+                                    <div class="modalProductPrice">$8</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product26" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Zapatitos tinok 1 -min.png" alt = "Zapato Tinok Blanco" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Zapato Tinok Blanco</div>
+                                    <p class="modalParagraph">Zapatos blancos para bebés</p>
+                                    <div class="modalProductPrice">$10</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product27" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Conjunto jirafa.png" alt = "Conjunto jirafa" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Conjunto jirafa</div>
+                                    <p class="modalParagraph">Conjunto Enterizo con tematica de Conejo para bebes</p>
+                                    <div class="modalProductPrice">$18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product28" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Disfraz iron man.png" alt = "Disfraz de Iron man Bebé" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Disfraz de Iron man Bebé</div>
+                                    <p class="modalParagraph">Disfraz de Iron man para Bebé de 6 a 12 meses</p>
+                                    <div class="modalProductPrice">$25</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product29" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Enterizo animales.png" alt = "Conjunto Enterizo de animales" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Conjunto Enterizo de animales</div>
+                                    <p class="modalParagraph">Conjunto Enterizo con tematica de animales variados para bebé</p>
+                                    <div class="modalProductPrice">$18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product210" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Enterizo mama increible.png" alt = "Conjunto Enterizo Mamá Increible" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Conjunto Enterizo Mamá Increible</div>
+                                    <p class="modalParagraph">Conjunto Enterizo para recorda lo increible que es Mamá</p>
+                                    <div class="modalProductPrice">$18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product211" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Medias peq niña2-min.png" alt = "Set de medias de bebé Rosadas" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Set de medias de bebé Rosadas</div>
+                                    <p class="modalParagraph">set de dos pares de medias rosadas con antideslizante</p>
+                                    <div class="modalProductPrice">$3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product212" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Medias peq niña 1-min.png" alt = "Set de medias de bebé Rojas" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Set de medias de bebé Rojas</div>
+                                    <p class="modalParagraph">set de dos pares de medias rojas con antideslizante</p>
+                                    <div class="modalProductPrice">$3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product213" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Franela blanca ovejita.png" alt = "Franelas Ovejita bebes (Colores surtidos)" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Franelas Ovejita bebes (Colores surtidos)</div>
+                                    <p class="modalParagraph">Franelas Ovejita de Colores surtidos para bebes entre 0 y 24 meses </p>
+                                    <div class="modalProductPrice">$3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product214" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Medias con vuelo-min.png" alt = "Medias para bebés recien nacidos" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Medias para bebés recien nacidos</div>
+                                    <p class="modalParagraph">Medias unicolor para recien nacidos</p>
+                                    <div class="modalProductPrice">$1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product215" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Gorro y manoplas azul.png" alt = "Set de gorro y manoplas" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Set de gorro y manoplas</div>
+                                    <p class="modalParagraph">Set de gorro y manoplas de colores surtidos para bebes recien nacidos</p>
+                                    <div class="modalProductPrice">$4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product216" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Gorro y manoplas tejidas.png" alt = "Set de gorro y manoplas tejidas" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Set de gorro y manoplas tejidas</div>
+                                    <p class="modalParagraph">Set de gorro y manoplas de colores surtidos tejidas para bebes recien nacidos</p>
+                                    <div class="modalProductPrice">$7</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Seccion con productos para bebés -->
             <h3 class="title">BEBÉS</h3>
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/20211106_143508-min.png" alt = "Bañera Nemo" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Conjunto enterizo conejo.png" alt = "Conjunto Enterizo Conejo" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Bañera Nemo</div>
-                            <div class="productPrice">$180</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Conjunto Enterizo Conejo</div>
+                            <div class="productPrice">$18</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product21"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 4-min.png" alt = "Zapato Tinok Marrón" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Zapatitos tinok 4-min.png" alt = "Zapato Tinok Marrón" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Zapato Tinok Marrón</div>
                             <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product22"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 3-min.png" alt = "Zapato Tinok Rosado" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Zapatitos tinok 3-min.png" alt = "Zapato Tinok Rosado" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Zapato Tinok Rosado</div>
                             <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product23"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 2-min.png" alt = "Zapato Tinok Negro" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Zapatitos tinok 2-min.png" alt = "Zapato Tinok Negro" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Zapato Tinok Negro</div>
                             <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product24"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tigre-min.png" alt = "Zapato Tigre de bebé" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Zapatitos tigre-min.png" alt = "Zapato Tigre de bebé" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Zapato Tigre de bebé</div>
                             <div class="productPrice">$8</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product25"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 1 -min.png" alt = "Zapato Tinok Blanco" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Zapatitos tinok 1 -min.png" alt = "Zapato Tinok Blanco" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Zapato Tinok Blanco</div>
                             <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product26"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Teteros con motivo3-min.png" alt = "Biberón Genial" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Conjunto jirafa.png" alt = "Biberón Genial" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Biberón Genial</div>
-                            <div class="productPrice">$6</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Conjunto jirafa</div>
+                            <div class="productPrice">$18</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product27"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Teteros con motivo2-min.png" alt = "Biberón Bebesitos" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Disfraz iron man.png" alt = "Disfraz de Iron man Bebé" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Biberón Bebesitos</div>
-                            <div class="productPrice">$6</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Disfraz de Iron man Bebé</div>
+                            <div class="productPrice">$25</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product28"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Cobija buhito-min.png" alt = "Cobija estampada con bordado y sonido" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Enterizo animales.png" alt = "Conjunto Enterizo de animales" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Cobija estampada con bordado y sonido</div>
-                            <div class="productPrice">$20</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Conjunto Enterizo de animales</div>
+                            <div class="productPrice">$18</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product29"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Teteros con motivo1-min.png" alt = "Biberón Genial Tigre" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Enterizo mama increible.png" alt = "Conjunto Enterizo Mamá Increible" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Biberón Genial Tigre</div>
-                            <div class="productPrice">$9</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Conjunto Enterizo Mamá Increible</div>
+                            <div class="productPrice">$18</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product210"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Medias peq niña2-min.png" alt = "Set de medias de bebé Rosadas" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Medias peq niña2-min.png" alt = "Set de medias de bebé Rosadas" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Set de medias de bebé Rosadas</div>
                             <div class="productPrice">$3</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product211"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Medias peq niña 1-min.png" alt = "Set de medias de bebé rojas" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Medias peq niña 1-min.png" alt = "Set de medias de bebé rojas" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Set de medias de bebé rojas</div>
                             <div class="productPrice">$3</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product212"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Cobijas animalitos-min.png" alt = "Set de cobijas" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Franela blanca ovejita.png" alt = "Franelas Ovejita bebes (Colores surtidos)" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Set de cobijas</div>
-                            <div class="productPrice">$15</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Franelas Ovejita bebes (Colores surtidos)</div>
+                            <div class="productPrice">$3</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product213"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Medias con vuelo-min.png" alt = "Medias para bebés recien nacidos" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Medias con vuelo-min.png" alt = "Medias para bebés recien nacidos" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
                             <div class="productDescription">Medias para bebés recien nacidos</div>
                             <div class="productPrice">$1</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product214"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/bañera morada-min.png" alt = "Bañera (colores surtidos)" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Gorro y manoplas azul.png" alt = "Set de gorro y manoplas" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Bañera (colores surtidos)</div>
-                            <div class="productPrice">$80</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Set de gorro y manoplas</div>
+                            <div class="productPrice">$4</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product215"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/20211106_144307-min.png" alt = "Poceta para bebé de tortuguita" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Gorro y manoplas tejidas.png" alt = "Set de gorro y manoplas tejidas" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Poceta para bebé de tortuguita</div>
-                            <div class="productPrice">$25</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Set de gorro y manoplas tejidas</div>
+                            <div class="productPrice">$7</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product216"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>

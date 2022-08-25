@@ -102,9 +102,8 @@ figcaption {
         margin: 10px;
     }
 }
-.searchContainer:hover .input {
-    width: 100px;
-}
+
+
 .searchContainer .input {
     background: transparent;
     border: none;
@@ -117,6 +116,9 @@ figcaption {
 }
 .searchContainer .searchBtn .fas {
     color: black;
+}
+.searchContainer:focus-within .input {
+  width: 100px;
 }
 .bg-primary {
     background-color: $mainColor!important;

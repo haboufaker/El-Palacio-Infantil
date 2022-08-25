@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <div>
+    <div class="verticalControl">
         <header class="navbar-nav nav-bar">
             <nav>
                 <ul class="mainMenu">
@@ -126,215 +126,777 @@
         </header>
     
         <main>
+            <!-- Modales -->
+            <div class="modal fade" id="product41" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Chemise amarilla.png" alt = "Chemise Escolar Amarilla" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Chemise Escolar Amarilla</div>
+                                    <p class="modalParagraph">Chemise Escolar Amarilla de niña disponible en tallas 2-8</p>
+                                    <div class="modalProductPrice">$14</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product42" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Camisa escolar azul.png" alt = "Camisa Escolar Azul" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Camisa Escolar Azul</div>
+                                    <p class="modalParagraph">Camisa Escolar Azul disponible desde talla 12 a M</p>
+                                    <div class="modalProductPrice">$14</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product43" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Conjunto princesa sofia.png" alt = "Conjunto Princesa Sofia" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Conjunto Princesa Sofia</div>
+                                    <p class="modalParagraph">Conjunto con motivo de la Princesa Sofia</p>
+                                    <div class="modalProductPrice">$25</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product44" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Camisa-escolar-beige.png" alt = "Camisa Escolar Beige" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Camisa Escolar Beige</div>
+                                    <p class="modalParagraph">Camisa Escolar Beige disponible desde talla 12 a M</p>
+                                    <div class="modalProductPrice">$14</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product45" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Camisa-escolar-blanca.png" alt = "Camisa Escolar Blanca" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Camisa Escolar Blanca</div>
+                                    <p class="modalParagraph">Camisa Escolar Blanca disponible desde talla 6 a 14</p>
+                                    <div class="modalProductPrice">$14</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product46" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Chemise-beige.png" alt = "Chemise Beige" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Chemise Beige</div>
+                                    <p class="modalParagraph">Chemise Beige disponible en tallas 12 - M</p>
+                                    <div class="modalProductPrice">$14</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product47" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Disfraz Lalalupys.png" alt = "Disfraz Lalalupys" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Disfraz Lalalupys</div>
+                                    <p class="modalParagraph">Disfraz de Lalalupys talla 2</p>
+                                    <div class="modalProductPrice">$25</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product48" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Disfraz mariposa.png" alt = "Disfraz Mariposa" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Disfraz Mariposa</div>
+                                    <p class="modalParagraph">Disfraz de Mariposa talla 2</p>
+                                    <div class="modalProductPrice">$25</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product49" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Falda escolar.png" alt = "Falda Escolar" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Falda Escolar</div>
+                                    <p class="modalParagraph">Falda Escolar disponible en tallas 12 - L</p>
+                                    <div class="modalProductPrice">$18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product410" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Franela blanca paris.png" alt = "Franela Blanca Paris" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Franela Blanca Paris</div>
+                                    <p class="modalParagraph">Franela Blanca con motivo de Paris tallas 8-14</p>
+                                    <div class="modalProductPrice">$13</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product411" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Franela celeste minnie.png" alt = "Franela Celeste Minnie" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Franela Celeste Minnie</div>
+                                    <p class="modalParagraph">Franela Celeste con motivo de Minnie Mouse disponible en tallas 8-14</p>
+                                    <div class="modalProductPrice">$13</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product412" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Franela peppa pig.png" alt = "Franela Peppa Pig" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Franela Peppa Pig</div>
+                                    <p class="modalParagraph">Franela con motivo de Peppa Pig tallas 8 - 14</p>
+                                    <div class="modalProductPrice">$13</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product413" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Franelilla blanca ovejita.png" alt = "Franelilla Blanca Ovejita" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Franelilla Blanca Ovejita</div>
+                                    <p class="modalParagraph">Franelilla bordada Blanca marca Ovejita tallas 2-12</p>
+                                    <div class="modalProductPrice">$5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product414" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Pantymedias negras.png" alt = "Medias Panty Negras" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Medias Panty Negras</div>
+                                    <p class="modalParagraph">Medias Panty Negras tallas 0-12</p>
+                                    <div class="modalProductPrice">$4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product415" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Vestido blanco encaje.png" alt = "Vestido Blanco Encaje" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Vestido Blanco Encaje</div>
+                                    <p class="modalParagraph">Vestido Blanco de Encaje ideal para bautizos y primera comunion</p>
+                                    <div class="modalProductPrice">$30</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="product416" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modalHeader">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="modalImageContainer">
+                                        <img class="modalImage" src = "../assets/images/Chemise azul.png" alt = "Chemise Escolar Azul" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="modalProductDescription">Chemise Escolar Azul</div>
+                                    <p class="modalParagraph">Chemise escolar azul disponible en tallas 12 - M</p>
+                                    <div class="modalProductPrice">$14</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-around modalFooter">
+                            <div class="row">
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div>Agregar a la lista de deseos</div>
+                                </button>
+                                <button type="button" class="btn modalFooterButton col">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <div>Descripcion completa</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Seccion con productos para niñas -->
             <h3 class="title">NIÑAS</h3>
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/20211106_143508-min.png" alt = "Bañera Nemo" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Chemise amarilla.png" alt = "Chemise Escolar Amarilla" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Bañera Nemo</div>
-                            <div class="productPrice">$180</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Chemise Escolar Amarilla</div>
+                            <div class="productPrice">$14</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product41"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 4-min.png" alt = "Zapato Tinok Marrón" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Camisa escolar azul.png" alt = "Camisa Escolar Azul" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Zapato Tinok Marrón</div>
-                            <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productDescription">Camisa Escolar Azul</div>
+                            <div class="productPrice">$14</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product42"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 3-min.png" alt = "Zapato Tinok Rosado" class="productImage img-fluid" width="20%" height="20%">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Conjunto princesa sofia.png" alt = "Conjunto Princesa Sofia" class="productImage img-fluid">
                         </figure>
                         <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Zapato Tinok Rosado</div>
-                            <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 2-min.png" alt = "Zapato Tinok Negro" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Zapato Tinok Negro</div>
-                            <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tigre-min.png" alt = "Zapato Tigre de bebé" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Zapato Tigre de bebé</div>
-                            <div class="productPrice">$8</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Zapatitos tinok 1 -min.png" alt = "Zapato Tinok Blanco" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Zapato Tinok Blanco</div>
-                            <div class="productPrice">$10</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Teteros con motivo3-min.png" alt = "Biberón Genial" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Biberón Genial</div>
-                            <div class="productPrice">$6</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Teteros con motivo2-min.png" alt = "Biberón Bebesitos" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Biberón Bebesitos</div>
-                            <div class="productPrice">$6</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Cobija buhito-min.png" alt = "Cobija estampada con bordado y sonido" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Cobija estampada con bordado y sonido</div>
-                            <div class="productPrice">$20</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Teteros con motivo1-min.png" alt = "Biberón Genial Tigre" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Biberón Genial Tigre</div>
-                            <div class="productPrice">$9</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Medias peq niña2-min.png" alt = "Set de medias de bebé Rosadas" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Set de medias de bebé Rosadas</div>
-                            <div class="productPrice">$3</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Medias peq niña 1-min.png" alt = "Set de medias de bebé rojas" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Set de medias de bebé rojas</div>
-                            <div class="productPrice">$3</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Cobijas animalitos-min.png" alt = "Set de cobijas" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Set de cobijas</div>
-                            <div class="productPrice">$15</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/Medias con vuelo-min.png" alt = "Medias para bebés recien nacidos" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Medias para bebés recien nacidos</div>
-                            <div class="productPrice">$1</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/bañera morada-min.png" alt = "Bañera (colores surtidos)" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Bañera (colores surtidos)</div>
-                            <div class="productPrice">$80</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
-                        <figure>
-                            <img src = "../assets/images/20211106_144307-min.png" alt = "Poceta para bebé de tortuguita" class="productImage img-fluid" width="20%" height="20%">
-                        </figure>
-                        <div class="productTextContainer container-fluid mobileText">
-                            <div class="productDescription">Poceta para bebé de tortuguita</div>
+                            <div class="productDescription">Conjunto Princesa Sofia</div>
                             <div class="productPrice">$25</div>
-                            <div class="productButton">
-                                <div><i class="fa-solid fa-basket-shopping"></i>Añadir al carrito</div>
-                                <div><i class="fa-solid fa-eye"></i></div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product43"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Camisa-escolar-beige.png" alt = "Camisa Escolar Beige" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Camisa Escolar Beige</div>
+                            <div class="productPrice">$14</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product44"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Camisa-escolar-blanca.png" alt = "Zapato Tigre de bebé" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Camisa Escolar Blanca</div>
+                            <div class="productPrice">$14</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product45"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Chemise-beige.png" alt = "Chemise Beige" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Chemise Beige</div>
+                            <div class="productPrice">$14</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product46"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Disfraz Lalalupys.png" alt = "Disfraz Lalalupys" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Disfraz Lalalupys</div>
+                            <div class="productPrice">$25</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product47"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Disfraz mariposa.png" alt = "Conjunto Heart Breaker" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Disfraz Mariposa</div>
+                            <div class="productPrice">$25</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product48"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Falda escolar.png" alt = "Falda Escolar" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Falda Escolar</div>
+                            <div class="productPrice">$18</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product49"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Franela blanca paris.png" alt = "Franela Blanca Paris" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Franela Blanca Paris</div>
+                            <div class="productPrice">$13</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product410"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Franela celeste minnie.png" alt = "Franela Celeste Minnie" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Franela Celeste Minnie</div>
+                            <div class="productPrice">$13</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product411"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Franela peppa pig.png" alt = "Franela Peppa Pig" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Franela Peppa Pig</div>
+                            <div class="productPrice">$13</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product412"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Franelilla blanca ovejita.png" alt = "Franelilla Blanca Ovejita" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Franelilla Blanca Ovejita</div>
+                            <div class="productPrice">$5</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product413"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Pantymedias negras.png" alt = "Medias Panty Negras" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Medias Panty Negras</div>
+                            <div class="productPrice">$4</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product414"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Vestido blanco encaje.png" alt = "Vestido Blanco Encaje" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Vestido Blanco Encaje</div>
+                            <div class="productPrice">$30</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product415"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 products">
+                        <figure class="productContainer">
+                            <img src = "../assets/images/Chemise azul.png" alt = "Chemise Escolar Azul" class="productImage img-fluid">
+                        </figure>
+                        <div class="productTextContainer container-fluid mobileText">
+                            <div class="productDescription">Chemise Escolar Azul</div>
+                            <div class="productPrice">$14</div>
+                            <div class="productButton row">
+                                <a class="modalButton col text-center"><i class="fa-solid fa-basket-shopping"></i><div class="productIcon">Añadir al carrito</div></a>
+                                <a class="modalButton col text-center" data-bs-toggle="modal" data-bs-target="#product416"><i class="fa-solid fa-eye"></i><div class="productIcon">Ver más</div></a>
                             </div>
                         </div>
                     </div>

@@ -6,6 +6,7 @@ main {
     flex-wrap: wrap;
     width: 100%;
     max-width: $maxWidth;
+    flex: 1 auto;
 }
 div figure div {
     @include phoneLarge {
@@ -42,7 +43,7 @@ div figure div {
     margin:10px;
     padding-top: 30px;
     &:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     }
     @include phoneLarge {
         display: flex;
@@ -50,6 +51,7 @@ div figure div {
         width: 100%;
         max-width: 400px;
         max-height: 200px;
+        padding-top: 15px;
     }
     @include phoneSmall {
         display: flex;
@@ -60,33 +62,33 @@ div figure div {
         height: auto;
     }
 }
+.productContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    @include phoneLarge {
+        height: auto;
+    }
+}
 .productImage {
     text-align: center;
-    min-width:150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
     border-radius: 10%;
     @include phoneLarge {
-        width: 150px;
-        height: 150px;
+        max-width: 100px;
         border-radius: 10%;
         margin-left: 0;
     }
     @include phoneSmall {
-        width: 100px;
-        height: 100px;
-        min-width: 100px;
-        min-height: 100px;
-        text-align: center;
-    }
-}
-.mobileText {
-    @include phoneSmall {
-        padding-left: 10px;
+        max-width: 85px;
     }
 }
 .productTextContainer {
     padding-left: 5px;
-    background-color: rgb(212, 254, 254);
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -100,14 +102,22 @@ div figure div {
 }
 .productDescription {
     padding-top: 10px;
-    text-align: start;
+    @include phoneLarge {
+        margin-left: 20px;
+    }
     @include phoneSmall {
-        min-width: 0px;
+        margin-left: 5px;
     }
 }
 .productPrice {
     padding-top: 10px;
     padding-bottom: 10px;
+    @include phoneLarge {
+        margin-left: 20px;
+    }
+    @include phoneSmall {
+        margin-left: 5px;
+    }
 }
 .productButton {
     margin-bottom: 5px;
@@ -115,7 +125,62 @@ div figure div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     @include phoneLarge {
         margin-bottom: 0px;
     }
+}
+.productIcon {
+    min-width: max-content;
+}
+.modalButton {
+    display: block;
+    min-width: 0;
+    margin: auto;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: $mainColor;
+    max-width: max-content;
+    cursor: pointer;
+    &:hover {
+        color: black;
+    }
+}
+.modalHeader {
+    background-color: $mainColor;
+}
+.modalImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalImage {
+    max-height: 300px;
+    max-width: 210px;
+}
+.modalFooter {
+    @extend .modalHeader;
+}
+.modalProductDescription {
+    padding-top: 10px;
+    text-align: start;
+    color: $mainColor;
+    font-size: 2rem;
+}
+.modalParagraph {
+    font-size: $normalTextSize;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.modalProductPrice {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $mainColor;
+    font-size: 2rem;
+}
+.modalFooterButton {
+    @extend .modalButton;
+    color: $textColor;
+    border: none;
+    max-width: max-content;
 }

@@ -3,6 +3,7 @@ footer {
     background-color: $mainColor;
     font-family: mikado;
     bottom: 0px;
+    margin-top: auto;
     height: 100%;
     max-height: 400px;
     width: 100%;
@@ -47,6 +48,7 @@ footer {
     border-color: black;
     width: 100%;
     margin-top: 0;
+    padding-left: 1rem;
 }
 .newsletterButton {
     display: flex;
