@@ -41,6 +41,9 @@ button {
     text-align: center;
     border-radius: 0%;
 }
+.buttonMargin {
+    margin: 10px 10px 10px 0px;
+}
 .formInput {
     display: flex;
     flex-direction: row;
@@ -55,4 +58,5 @@ button {
 .formButtons {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
