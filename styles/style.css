@@ -18,7 +18,7 @@
 /*secciones*/
 /*Elementos generales*/
 body {
-  background-image: url("../assets/images/background-05.png");
+  background-image: url("../assets/images/background-05.jpg");
   background-size: cover;
   background-repeat: repeat-y;
   font-family: capriolaRegular;
@@ -676,7 +676,8 @@ footer {
 .locationIcon {
   height: 25px;
   width: 25px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-bottom: 10px; }
 
 .currentPage {
   font-size: 1.5rem;
