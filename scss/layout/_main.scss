@@ -16,6 +16,58 @@ div figure div {
     }
 }
 /*Clases para el main*/
+/*Banner*/
+.carouselCaptionCapriola {
+    font-family: capriolaRegular;
+    font-size: 1.875rem;
+    position: absolute;
+    color: $textColor;
+    top: 16%;
+    left: 6%;
+    max-width: 350px;
+    @include tabletSmall {
+        font-size: 1.5rem;
+        max-width: 250px;
+    }
+    @include phoneLarge {
+        font-size: 1rem;
+        max-width: 150px;
+    }
+    @include phoneSmall {
+        font-size: 0.8rem;
+        max-width: 120px;
+    }
+}
+.carouselCapriolaBebe {
+    font-family: mikado;
+    font-size: 7.5rem;
+    font-weight: bold;
+    position: absolute;
+    color: #662d91;
+    bottom: 2%;
+    left: 6%;
+    @include tabletSmall {
+        font-size: 6rem;
+    }
+    @include phoneLarge {
+        font-size: 4rem;
+    }
+    @include phoneSmall {
+        font-size: 2.5rem;
+    }
+}
+.carouselCapriolaBoy {
+    @extend .carouselCapriolaBebe;
+    color: #2e5596;
+}
+.carouselCapriolaGirl {
+    @extend .carouselCapriolaBebe;
+    color: #ad3863;
+}
+.carouselCapriolaAccessories {
+    @extend .carouselCapriolaBebe;
+    color: #cede00;
+}
 /*Galeria de productos*/
 .title {
     border-style: solid;

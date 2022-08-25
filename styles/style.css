@@ -300,6 +300,55 @@ main {
     align-items: start; } }
 
 /*Clases para el main*/
+/*Banner*/
+.carouselCaptionCapriola {
+  font-family: capriolaRegular;
+  font-size: 1.875rem;
+  position: absolute;
+  color: white;
+  top: 16%;
+  left: 6%;
+  max-width: 350px; }
+  @media screen and (max-width: 991px) {
+    .carouselCaptionCapriola {
+      font-size: 1.5rem;
+      max-width: 250px; } }
+  @media screen and (max-width: 576px) {
+    .carouselCaptionCapriola {
+      font-size: 1rem;
+      max-width: 150px; } }
+  @media screen and (max-width: 430px) {
+    .carouselCaptionCapriola {
+      font-size: 0.8rem;
+      max-width: 120px; } }
+
+.carouselCapriolaBebe, .carouselCapriolaBoy, .carouselCapriolaGirl, .carouselCapriolaAccessories {
+  font-family: mikado;
+  font-size: 7.5rem;
+  font-weight: bold;
+  position: absolute;
+  color: #662d91;
+  bottom: 2%;
+  left: 6%; }
+  @media screen and (max-width: 991px) {
+    .carouselCapriolaBebe, .carouselCapriolaBoy, .carouselCapriolaGirl, .carouselCapriolaAccessories {
+      font-size: 6rem; } }
+  @media screen and (max-width: 576px) {
+    .carouselCapriolaBebe, .carouselCapriolaBoy, .carouselCapriolaGirl, .carouselCapriolaAccessories {
+      font-size: 4rem; } }
+  @media screen and (max-width: 430px) {
+    .carouselCapriolaBebe, .carouselCapriolaBoy, .carouselCapriolaGirl, .carouselCapriolaAccessories {
+      font-size: 2.5rem; } }
+
+.carouselCapriolaBoy {
+  color: #2e5596; }
+
+.carouselCapriolaGirl {
+  color: #ad3863; }
+
+.carouselCapriolaAccessories {
+  color: #cede00; }
+
 /*Galeria de productos*/
 .title {
   border-style: solid;
