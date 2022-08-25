@@ -335,7 +335,8 @@ main {
       font-size: 6rem; } }
   @media screen and (max-width: 576px) {
     .carouselCapriolaBebe, .carouselCapriolaBoy, .carouselCapriolaGirl, .carouselCapriolaAccessories {
-      font-size: 4rem; } }
+      font-size: 4rem;
+      bottom: 12%; } }
   @media screen and (max-width: 430px) {
     .carouselCapriolaBebe, .carouselCapriolaBoy, .carouselCapriolaGirl, .carouselCapriolaAccessories {
       font-size: 2.5rem; } }
@@ -570,7 +571,7 @@ button {
 /*Clases para pagina "Nosotros*/
 .aboutUs {
   font-size: 1rem;
-  margin: 10px; }
+  margin: 40px 10px 40px 10px; }
   @media screen and (max-width: 991px) {
     .aboutUs {
       font-size: 0.8rem; } }
@@ -586,24 +587,23 @@ button {
 .aboutUsSubcontainer {
   display: flex;
   flex-direction: row;
-  margin: 20px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media screen and (max-width: 576px) {
     .aboutUsSubcontainer {
       display: flex;
       flex-direction: column; } }
 
-.aboutUsSubcontainerReverse {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 20px; }
-  @media screen and (max-width: 576px) {
-    .aboutUsSubcontainerReverse {
-      display: flex;
-      flex-direction: column; } }
+.aboutUsImageBanner {
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px; }
 
 .aboutUsImage {
-  max-width: 300px;
-  margin: 20px; }
+  max-width: 350px;
+  margin-right: 50px;
+  border-radius: 80%; }
   @media screen and (max-width: 991px) {
     .aboutUsImage {
       max-width: 250px; } }

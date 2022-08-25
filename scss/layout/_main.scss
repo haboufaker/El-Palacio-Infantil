@@ -51,9 +51,11 @@ div figure div {
     }
     @include phoneLarge {
         font-size: 4rem;
+        bottom: 12%;
     }
     @include phoneSmall {
         font-size: 2.5rem;
+        
     }
 }
 .carouselCapriolaBoy {
